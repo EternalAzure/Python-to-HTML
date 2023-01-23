@@ -1,6 +1,10 @@
 # Python-to-HTML
-Javascript parser that turns python text representation into HTML representation.
+Javascript parser that turns python text representation into HTML representation.<br>
 Works in real time. Color your code with color scheme of your choice.
+
+On left is my input and on right output. This script creates new output as I write. <br>
+This is a greate tool for showing code on web in lieu of images and plain text.
+![sample code with syntaxt highlighting](sample.PNG)
 
 ## How to use
 __Import__ js to your HTML
