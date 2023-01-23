@@ -1,0 +1,32 @@
+
+.python {
+    font-family: Consolas,Menlo,monospace;
+}
+
+.default {
+    color: skyblue;
+}
+
+.primitive {
+    color: green;
+}
+
+.number {
+    color: blue;
+}
+
+.keyword {
+    color: violet;
+}
+
+.operator {
+    color: white;
+}
+
+.function {
+    color: yellow;
+}
+
+.string {
+    color: orange;
+}
