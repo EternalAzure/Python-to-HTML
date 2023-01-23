@@ -1,0 +1,69 @@
+<head>
+  <link rel="stylesheet" href="/static/editor.css" />
+  <script src="/static/pythonParser.js"></script>
+  <script>
+    async function updateCode() {
+      let input = document.querySelector("div[id=codeinput] textarea").value
+      document.getElementById("codeoutput").innerHTML = pythonToHtml(input)
+    }
+  </script>
+</head>
+
+<body>
+  
+  <div id="container">
+    <div id="codeinputcontainer">
+      <div id="codeinput" class="codewrapper">
+          <textarea autocomplete="off" id="inputCode" wrap="logical" spellcheck="false", onchange="updateCode()">
+            import math
+
+            class Taurus():
+                def __init__(self):
+                    self.miip = "miip"
+                    self.four = 3 + 1
+
+                def foo(self, text):
+                    text = str(text)
+                    if text == "foo":
+                        print(text + str(self.four))
+                
+                def loop(arr:list):
+                    for var in arr:
+                        var
+                    
+                    while var:
+                        var
+                        break
+                    arr = [1,2,3]
+
+                def test(value):
+                    try:
+                        value.shout()
+                    except:
+                        print("Failed")
+
+                def primitives(val) -> list:
+                    list = []
+                    list.push(str(val))
+                    list.push(int(val))
+                    list.push(float(val))
+                    list.push(bool(val))
+                    return list
+
+            if __name__ == "__main__":
+                taurus = Taurus()
+                taurus.foo("hurraa")
+          </textarea>
+      </div>
+    </div>
+    <div id="codeoutputcontainer">
+      <div>
+        <div id="codeoutput" class="codewrapper">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>updateCode()</script>
+
+</body>
